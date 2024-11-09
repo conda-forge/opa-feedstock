@@ -1,5 +1,5 @@
 {% set name = "opa" %}
-{% set version = "0.68.0" %}
+{% set version = "0.70.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/open-policy-agent/opa/archive/v{{ version }}.tar.gz
-  sha256: 5c7f985b70d69f208af12d14c2d73ef802ec8fdb6025795f94f1edd9ced82033
+  sha256: c28ce33bbf1ccc4f70625f467bfcb70d91fa4431d82c96e6be39642659007e31
 
 build:
   number: 0
