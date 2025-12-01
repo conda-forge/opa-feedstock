@@ -1,0 +1,37 @@
+schema_version: 1
+
+context:
+  version: 1.11.0
+
+package:
+  name: opa
+  version: ${{ version }}
+
+source:
+  url: https://github.com/open-policy-agent/opa/archive/v${{ version }}.tar.gz
+  sha256: a76cabc9e19bc86ee1f7b401a6c5a37905e9c66d297a6d20b9bc9d8eb7593d50
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - ${{ compiler('go-nocgo') }}
+    - go-licenses
+
+tests:
+  - script:
+      - opa --help
+
+about:
+  license: Apache-2.0
+  license_file:
+    - LICENSE
+    - license-files/
+  summary: Open Policy Agent (OPA) is an open source, general-purpose policy engine.
+  homepage: https://github.com/open-policy-agent/opa
+  repository: https://github.com/open-policy-agent/opa
+
+extra:
+  recipe-maintainers:
+    - danielnachun
