@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.12.0"
+  version: "1.12.1"
 
 package:
   name: opa
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/open-policy-agent/opa/archive/v${{ version }}.tar.gz
-  sha256: cfbd4a603fc36bf8d609a876b27be22222e67457e2b04de371a7dddedf55d689
+  sha256: 52dbb092c56102fff61bb920d441e8b4f578f504ed087008015a9ae577d03caa
 
 build:
   number: 0
